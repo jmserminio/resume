@@ -73,7 +73,7 @@ const expData = [
 	{
 		company: 'images/tcap_logo.png',
 		companyName: 'Transcosmos Asia Philippines Inc.',
-		dateExp: '( Full Stack Web Developer )',
+		dateExp: '( Front-End Web Developer )',
 		position: 'May 06, 2019 - Present',
 		description: [{
 			'desc' : ['Cooperate with designers to create clean interfaces and simple, intuitive interactions and experiences.',
