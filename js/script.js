@@ -1,13 +1,13 @@
 $(function() {
 	AOS.init();
   
-	$('.menu').click(function () {
+	$('.nav_menu_btn').click(function () {
 		
 		$(this).animate({
 			right: -100
 		});
 		
-		$('.wrap, footer').addClass('blur');
+		$('.wrap_inner, footer').addClass('content_blur');
 		
 		$('nav').animate({
 			right: 0
@@ -16,8 +16,8 @@ $(function() {
 		$('body').css('overflow', 'hidden');
 	});
 	
-	$('a[href^="#"] , .wrap').click(function (e) {
-		$('.wrap , footer').removeClass('blur');
+	$('a[href^="#"], .wrap_inner').click(function (e) {
+		$('.wrap_inner, footer').removeClass('content_blur');
 
 		$boxWidth = $('nav').width() + 50;
 
@@ -25,7 +25,7 @@ $(function() {
 			right: -$boxWidth
 		});
 		
-		$('.menu').animate({
+		$('.nav_menu_btn').animate({
 			right: 0
 		});
 		

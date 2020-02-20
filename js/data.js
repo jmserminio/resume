@@ -56,8 +56,7 @@ const chartData = [
 ];
 
 for(let i in chartData) {
-
-	$('.chart').append('\
+	$('.sk_bar_chart_li').append('\
 		<li class="item" data-aos="fade-right" data-aos-duration="500">\
 			<div class="bar">\
 				<span class="percent">'+ chartData[i].percent +'%</span>\
@@ -66,7 +65,7 @@ for(let i in chartData) {
 				</div>\
 			</div>\
 		</li>\
-');
+	');
 }
 
 const expData = [
