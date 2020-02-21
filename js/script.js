@@ -37,8 +37,9 @@ $(function() {
 		e.preventDefault();
 	});
 
-	$('.project').hover(function(){
-		$(this).children('.captionContent').css('bottom', '0');
+	$('.project_list').hover(function(){
+		$(this).children('.project_cap').css('bottom', '0');
 	},function(){
-		$('.captionContent').css('bottom', '-150px');});
+		$('.project_cap').css('bottom', '-150px');
+	});
 });

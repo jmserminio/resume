@@ -30,7 +30,7 @@ h2 {
 
 /* Inner */
 .wrap_inner {
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 
 .sec_area02,
@@ -48,7 +48,7 @@ h2 {
 	background: #494949;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
-	color: #fff;
+	color: #f0f0f0;
 	font-size: 2.5rem;
 	line-height: 1;
 	text-align: center;
@@ -71,7 +71,7 @@ h2 {
 }
 .nav_menu_li ul li:hover a {
 	background: #494949;
-	color: #fff;
+	color: #f0f0f0;
 }
 .nav_menu_li ul a {
 	display: block;
@@ -104,7 +104,7 @@ h2 {
     top: 25%;
     right: 5%;
 	padding: 15px;
-	color: #fff;
+	color: #f0f0f0;
 	font-weight: bold;
 }
 .my_info .my_contact .my_name {
@@ -114,7 +114,7 @@ h2 {
 }
 .my_info .my_contact .my_position {
 	padding: 5px 0;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid #f0f0f0;
 	font-size: 1rem;
 	text-align: right;
 }
@@ -136,7 +136,7 @@ h2 {
 	padding: 10px 15px;
 }
 
-/* SKILLS */
+/* Skills */
 .sk_bar_container .sk_bar_chart {
 	position: relative;
 	width: 100%;
@@ -151,7 +151,7 @@ h2 {
 	width: 100%;
 	height: 40px;
 	margin-bottom: 10px;
-	color: #fff;
+	color: #f0f0f0;
 	text-transform: uppercase;
 }
 .sk_bar_container .item .bar {
@@ -207,6 +207,10 @@ h2 {
 	0% {width: 0;}
 }
 
+
+
+
+
 .expList li.expBlock {
 	padding: 15px 0;
 }
@@ -230,96 +234,10 @@ h2 {
 	opacity: 0.8;
 }
 
-.projectContent {
-	overflow: hidden;
-	height: 300px;
-}
-
-.workContent {
-	overflow: hidden;
-}
-
-.workContent li {
-	float: left;
-	width: 50%;
-	padding: 15px;
-}
-
 .expContent {
 	padding: 15px;
 	display: table-cell;
 	vertical-align: middle;
-}
-
-.project {
-	position: relative;
-	overflow: hidden;
-}
-
-.captionContent {
-	position: absolute;
-	left: 0;
-	bottom: -150px;
-	background: #156b93;
-	width: 100%;
-	height: 150px;
-	transition: all .3s ease-out;
-	opacity: 0.9;
-}
-
-.project h3 {
-	font-size: 2rem;
-	text-align: center;
-	color: #f0f0f0;
-	padding: 20px 0;
-	font-weight: bold;
-}
-
-.seeMore {
-	width: 30%;
-	margin: auto;
-	padding-bottom: 20px;
-}
-
-.seeMore a {
-	color: #156b93;
-	border: 2px solid #156b93;
-	border-radius: 7px;
-	text-align: center;
-	padding: 10px 0;
-	display: block;
-}
-
-.seeMore:hover a {
-	color: #fff;
-	background: #156b93;
-	cursor: pointer;
-}
-
-.hide {
-	display: none;
-	padding: 20px 0 10px;
-}
-
-.viewSite {
-	width: 30%;
-	margin: auto;
-}
-
-.viewSite a {
-	color: #f0f0f0;
-	border: 2px solid #f0f0f0;
-	border-radius: 6px;
-	text-align: center;
-	padding: 10px 0;
-	display: block;
-	font-size: 0.9rem;
-	font-weight: bold;
-}
-
-.viewSite a:hover {
-	background: #f0f0f0;
-	color: #156b93;
 }
 
 .companyName,
@@ -337,10 +255,82 @@ h2 {
 	padding: 1% 0;
 }
 
+
+
+
+
+/* Projects */
+.project_content {
+	overflow: hidden;
+}
+.project_content li {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+.project_list {
+	overflow: hidden;
+}
+.project_list h3 {
+	padding: 20px 0;
+	color: #f0f0f0;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+}
+.project_cap {
+	position: absolute;
+	bottom: -150px;
+	width: 100%;
+	height: 150px;
+	background: #494949;
+	transition: all .5s ease-out;
+}
+.view_site {
+	width: 40%;
+	margin: auto;
+}
+.view_site a {
+	display: block;
+	padding: 10px 0;
+	border: 2px solid #f0f0f0;
+	border-radius: 8px;
+	color: #f0f0f0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+.view_site a:hover {
+	background: #f0f0f0;
+	color: #494949;
+}
+.project_img {
+	height: 300px;
+}
+.see_more {
+	width: 30%;
+	margin: auto;
+}
+.see_more a {
+	display: block;
+	padding: 10px 0;
+	border: 2px solid #494949;
+	border-radius: 8px;
+	color: #494949;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+.see_more:hover a {
+	color: #f0f0f0;
+	background: #494949;
+}
+
 /* Back to top */
 .arrow_up {
 	position: fixed;
-    bottom: 8%;
+    bottom: 10%;
     right: 3%;
     font-size: 2.5rem;
     animation: up 0.5s ease-in-out infinite;
@@ -396,11 +386,17 @@ footer .ft_content {
 	/* General */
 	h2 {
 		padding: 10px 15px;
+		letter-spacing: 0.2rem;
 	}
 	.sec_area02,
 	.sec_area03,
 	.sec_area04 {
 		margin-top: 0;
+	}
+
+	/* Inner */
+	.wrap_inner {
+		margin-bottom: 120px;
 	}
 
 	/* Nav Menu */
@@ -453,9 +449,25 @@ footer .ft_content {
 		font-size: 0.8rem;
 	}
 
+	/* Projects */
+	.project_content li {
+		width: 100%;
+	}
+	.project_list h3 {
+		font-size: 1.2rem;
+	}
+	.view_site {
+		width: 25%;
+	}
+	.view_site a {
+		padding: 8px 0;
+	}
+	.see_more a {
+		font-size: 0.8rem;
+	}
+
 	/* Back to top */
 	.arrow_up {
-		bottom: 10%;
 		right: 8%;
 		font-size: 1.5rem;
 	}
@@ -464,6 +476,7 @@ footer .ft_content {
 	footer {
 		position: fixed;
 		bottom: 0;
+		width: 100%;
 	}
 	.ft_content .ft_contact_ico {
 		width: 25%;

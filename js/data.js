@@ -85,21 +85,13 @@ const expData = [
 					'Support back-end developers for Unit Testing']
 		}],
 		project: [{
-			projectName: 'Duskin',
-			projectPhoto: 'images/project/PC_duskin.png',
-			projectLink: 'https://event.kasite.net/contents/summer.html'
+			projectName: 'Duskin Health Rent',
+			projectPhoto: '../Jm/img/jm.jpg',
+			projectLink: 'https://healthrent.duskin.jp/'
 		}, {
-			projectName: 'FujiFilm',
-			projectPhoto: 'images/project/PC_Fuji.png',
-			projectLink: 'http://www.fujifilmph.com/x-series/x-mirrorless-digital-camera/x-t20'
-		}, {
-			projectName: 'Rakuten',
-			projectPhoto: 'images/project/PC_rakuten.png',
-			projectLink: 'http://rex.public.rakuten-it.com/design/'
-		}, {
-			projectName: 'Stratton',
-			projectPhoto: 'images/project/PC_stratton.jpg',
-			projectLink: 'https://www.strattonfinance.com.au/'
+			projectName: 'Shonan Beauty Clinic',
+			projectPhoto: '../Jm/img/jm.jpg',
+			projectLink: 'https://www.s-b-c.net/'
 		}]
 	}
 ];
@@ -126,14 +118,14 @@ for(let x in expData) {
 	$('.expList').append(htmlStr);
 	
 	for(let z in expData[x].project){
-	$('.workContent').append('\
+	$('.project_content').append('\
 		<li>\
-			<div class="project" data-aos="fade-right" data-aos-duration="500">\
-				<div class="captionContent">\
+			<div class="project_list" data-aos="fade-right" data-aos-duration="500">\
+				<div class="project_cap">\
 					<h3>'+expData[x].project[z].projectName+'</h3>\
-					<p class="viewSite"><a href="'+expData[x].project[z].projectLink+'" target="_blank">Visit Site</a></p>\
+					<p class="view_site"><a href="'+expData[x].project[z].projectLink+'" target="_blank">Open</a></p>\
 				</div>\
-				<div class="projectContent"><img src="'+expData[x].project[z].projectPhoto+'"><div>\
+				<div class="project_img"><img src="'+expData[x].project[z].projectPhoto+'"><div>\
 			</div>\
 		</li>\
 		');
