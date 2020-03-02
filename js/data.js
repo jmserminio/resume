@@ -86,11 +86,11 @@ const expData = [
 		}],
 		project: [{
 			projectName: 'Duskin Health Rent',
-			projectPhoto: 'img/jm.jpg',
+			projectPhoto: 'img/dsk.jpg',
 			projectLink: 'https://healthrent.duskin.jp/'
 		}, {
 			projectName: 'Shonan Beauty Clinic',
-			projectPhoto: 'img/jm.jpg',
+			projectPhoto: 'img/sbc.jpg',
 			projectLink: 'https://www.s-b-c.net/'
 		}]
 	}
