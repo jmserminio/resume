@@ -86,11 +86,13 @@ const expData = [
 		}],
 		project: [{
 			projectName: 'Duskin Health Rent',
-			projectPhoto: 'img/dsk.jpg',
+			projectPhotoPc: 'img/dsk.jpg',
+			projectPhotoSp: 'img/dsk_sp.jpg',
 			projectLink: 'https://healthrent.duskin.jp/'
 		}, {
 			projectName: 'Shonan Beauty Clinic',
-			projectPhoto: 'img/sbc.jpg',
+			projectPhotoPc: 'img/sbc.jpg',
+			projectPhotoSp: 'img/sbc_sp.jpg',
 			projectLink: 'https://www.s-b-c.net/'
 		}]
 	}
@@ -125,7 +127,7 @@ for(let x in expData) {
 					<h3>'+expData[x].project[z].projectName+'</h3>\
 					<p class="view_site"><a href="'+expData[x].project[z].projectLink+'" target="_blank">Open</a></p>\
 				</div>\
-				<div class="project_img"><img src="'+expData[x].project[z].projectPhoto+'"><div>\
+				<div class="project_img"><img class="pcOnly" src="'+expData[x].project[z].projectPhotoPc+'"><img class="spOnly" src="'+expData[x].project[z].projectPhotoSp+'"><div>\
 			</div>\
 		</li>\
 		');
