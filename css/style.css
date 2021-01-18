@@ -95,7 +95,7 @@ h2 {
 .my_info {
     display: table-cell;
     width: 50%;
-    padding: 80px 40px;
+    padding: 5%;
     background: #494949;
 }
 .my_info .my_pic {
@@ -103,15 +103,15 @@ h2 {
 }
 .my_info .my_pic img {
 	opacity: 0.8;
-    transform: rotate(-5deg);
+	border-radius: 100%;
 }
 .my_info .my_contact {
     position: absolute;
-    top: 25%;
+    top: 50%;
     right: 5%;
-	padding: 15px;
 	color: #f0f0f0;
 	font-weight: bold;
+	transform: translateY(-50%);
 }
 .my_info .my_contact .my_name {
     font-size: 1.5rem;
@@ -120,7 +120,7 @@ h2 {
 }
 .my_info .my_contact .my_position {
 	padding: 5px 0;
-	border-bottom: 2px solid #f0f0f0;
+	border-bottom: 8px solid #f0f0f0;
 	font-size: 1rem;
 	text-align: right;
 }
@@ -434,21 +434,17 @@ footer .ft_content {
 		display: block;
 		width: 100%;
 	}
-	.my_info {
-		padding: 20% 8% 10%;
-	}
 	.my_info .my_pic {
-		width: 40%;
-		margin: 5% auto;
+		width: 30%;
+		margin: 5% 68%;
 	}
 	.my_info .my_pic img {
 		opacity: 1;
-		transform: unset;
 	}
 	.my_info .my_contact {
-		position: unset;
+		position: initial;
 		width: 100%;
-		padding: 0;
+		transform: initial;
 	}
 	.my_info .my_contact ul li {
 		font-size: 0.8rem;
