@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 /* General */
-*{
+* {
 	box-sizing: border-box;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -11,6 +11,7 @@
 	user-select: none;
 }
 body {
+	color: #494949;
 	font-family: 'Raleway';
 	font-size: 14px;
 	line-height: 1.5;
@@ -21,8 +22,7 @@ img {
 h2 {
 	padding: 15px;
     border-bottom: 2px solid #494949;
-    color: #494949;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 	font-weight: 1000;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
@@ -96,7 +96,9 @@ h2 {
     display: table-cell;
     width: 50%;
     padding: 5%;
-    background: #494949;
+	background: #494949;
+    border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
 }
 .my_info .my_pic {
 	width: 50%;
@@ -113,6 +115,10 @@ h2 {
 	font-weight: bold;
 	transform: translateY(-50%);
 }
+.my_info .my_contact a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
 .my_info .my_contact .my_name {
     font-size: 1.5rem;
     line-height: 1;
@@ -126,7 +132,6 @@ h2 {
 }
 .my_info .my_contact ul li {
 	margin: 8px 0;
-	font-size: 1rem;
 }
 .my_info .my_contact ul li i {
 	width: 15px;
@@ -139,7 +144,7 @@ h2 {
 	vertical-align: middle;
 }
 .me_about .me_about_content {
-	padding: 10px 15px;
+	padding: 15px;
 }
 
 /* Skills */
@@ -166,7 +171,7 @@ h2 {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #f0f0f0;
+	background-color: #808080;
 	border-radius: 5px;
 	z-index: 5;
 }
@@ -177,7 +182,7 @@ h2 {
 	right: 0;
 	height: 40px;
 	padding-right: 12px;
-	color: #000;
+	color: #f0f0f0;
 	line-height: 40px;
 	z-index: 15;
 }
@@ -198,7 +203,7 @@ h2 {
 	width: 290px;
 	height: 40px;
 	padding-left: 12px;
-	color: #fff;
+	color: #f0f0f0;
 	letter-spacing: 2px;
 	line-height: 40px;
 	z-index: 15;
@@ -214,37 +219,21 @@ h2 {
 	0% {width: 0;}
 }
 
+/* Experience */
 
 
-
-
-.expList li.expBlock {
-	padding: 15px 0;
-}
-
-.expBlock {
-	width: 100%;
-	display: table;
-}
 
 .logoContent {
-	background: #156b93;
-	width: 35%;
 	display: table-cell;
 	vertical-align: middle;
+	width: 30%;
 	padding: 15px;
-	text-align: center;
-}
-
-.logoContent img {
-	width: 64%;
-	opacity: 0.8;
 }
 
 .expContent {
-	padding: 15px;
 	display: table-cell;
 	vertical-align: middle;
+	padding: 15px;
 }
 
 .companyName,
@@ -254,7 +243,7 @@ h2 {
 }
 
 .descList i {
-	color: #156b93;
+	color: #494949;
 	padding-right: 1%;
 }
 
@@ -277,11 +266,12 @@ h2 {
 }
 .project_list {
 	overflow: hidden;
+	border: 10px solid;
 }
 .project_list h3 {
 	padding: 20px 0;
 	color: #f0f0f0;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	text-align: center;
 }
@@ -303,7 +293,6 @@ h2 {
 	border: 2px solid #f0f0f0;
 	border-radius: 8px;
 	color: #f0f0f0;
-	font-size: 1rem;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
@@ -311,9 +300,6 @@ h2 {
 .view_site a:hover {
 	background: #f0f0f0;
 	color: #494949;
-}
-.project_img {
-	height: 600px;
 }
 .see_more {
 	width: 30%;
@@ -325,7 +311,6 @@ h2 {
 	border: 2px solid #494949;
 	border-radius: 8px;
 	color: #494949;
-	font-size: 1rem;
 	text-align: center;
 	text-decoration: none;
 }
@@ -337,9 +322,9 @@ h2 {
 /* Back to top */
 .arrow_up {
 	position: fixed;
-    bottom: 10%;
+    bottom: 3%;
     right: 3%;
-    font-size: 2.5rem;
+    font-size: 3rem;
     animation: up 0.5s ease-in-out infinite;
 }
 .arrow_up a {
@@ -359,15 +344,13 @@ footer .ft_content {
 	display: table-cell;
     vertical-align: middle;
 	width: 50%;
-    color: #494949;
-    font-size: 0.8rem;
     text-align: center;
 }
 .ft_content .ft_contact_ico {
 	display: table-cell;
     vertical-align: middle;
 	width: 50%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 .ft_contact_ico li {
@@ -392,8 +375,9 @@ footer .ft_content {
 
 	/* General */
 	h2 {
-		padding: 10px 15px;
-		letter-spacing: 0.2rem;
+		padding: 15px;
+		font-size: 1.5rem;
+		letter-spacing: 0.3rem;
 	}
 	.sec_area02,
 	.sec_area03,
@@ -434,6 +418,11 @@ footer .ft_content {
 		display: block;
 		width: 100%;
 	}
+	.my_info {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 8%;
+		border-bottom-left-radius: 8%;
+	}
 	.my_info .my_pic {
 		width: 30%;
 		margin: 5% 68%;
@@ -446,21 +435,15 @@ footer .ft_content {
 		width: 100%;
 		transform: initial;
 	}
-	.my_info .my_contact ul li {
-		font-size: 0.8rem;
-	}
-	.me_about .me_about_content {
-		font-size: 1rem;
-	}
 
 	/* Skills */
-	.sk_bar_container .progress .title {
-		font-size: 0.8rem;
-	}
 
 	/* Projects */
 	.project_content li {
 		width: 100%;
+	}
+	.project_list {
+		border: 5px solid;
 	}
 	.project_list h3 {
 		padding: 10px 0;
@@ -476,17 +459,12 @@ footer .ft_content {
 	.view_site a {
 		padding: 5px 0;
 	}
-	.project_img {
-		height: 330px;
-	}
-	.see_more a {
-		font-size: 0.8rem;
-	}
 
 	/* Back to top */
 	.arrow_up {
-		right: 8%;
-		font-size: 1.5rem;
+		right: 5%;
+		bottom: 12%;
+		font-size: 2rem;
 	}
 
 	/* Footer */
@@ -495,7 +473,8 @@ footer .ft_content {
 		bottom: 0;
 		width: 100%;
 	}
-	.ft_content .ft_contact_ico {
-		width: 25%;
+	.ft_content .ft_cpy_right,
+	.ft_content .ft_contact_ico { 
+		width: 30%;
 	}
 }

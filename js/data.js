@@ -70,7 +70,7 @@ for(let i in chartData) {
 
 const expData = [
 	{
-		company: 'images/tcap_logo.png',
+		company: 'img/tcap.png',
 		companyName: 'Transcosmos Asia Philippines Inc.',
 		dateExp: '( Front-End Web Developer )',
 		position: 'May 06, 2019 - Present',
