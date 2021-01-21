@@ -209,7 +209,7 @@ h2 {
 	z-index: 15;
 }
 .sk_bar_container .title i {
-	padding-right: 10px;
+	padding-right: 8px;
 }
 
 @-webkit-keyframes mymove {
@@ -220,40 +220,27 @@ h2 {
 }
 
 /* Experience */
-
-
-
-.logoContent {
+.logo_content {
 	display: table-cell;
 	vertical-align: middle;
 	width: 30%;
 	padding: 15px;
+	background: #f0f0f0;
 }
-
-.expContent {
+.exp_content {
 	display: table-cell;
 	vertical-align: middle;
-	padding: 15px;
+	padding: 10px;
 }
-
-.companyName,
-.dateExp,
-.position {
+.company_name,
+.job_position,
+.job_exp {
 	font-weight: bold;
 }
-
-.descList i {
+.description_list i {
+	padding-right: 5px;
 	color: #494949;
-	padding-right: 1%;
 }
-
-.descList li {
-	padding: 1% 0;
-}
-
-
-
-
 
 /* Projects */
 .project_content {
@@ -266,7 +253,7 @@ h2 {
 }
 .project_list {
 	overflow: hidden;
-	border: 10px solid;
+	border: 2px solid;
 }
 .project_list h3 {
 	padding: 20px 0;
@@ -438,12 +425,14 @@ footer .ft_content {
 
 	/* Skills */
 
+	/* Experience */
+	.logo_content {
+		padding: 5px;
+	}
+
 	/* Projects */
 	.project_content li {
 		width: 100%;
-	}
-	.project_list {
-		border: 5px solid;
 	}
 	.project_list h3 {
 		padding: 10px 0;

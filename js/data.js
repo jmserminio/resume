@@ -1,55 +1,43 @@
 $(function() {
 const chartData = [
 	{
-		percent: 90,
+		percent: 92,
 		textContent: 'HTML/HTML5',
 		icon: 'fab fa-html5'
 	}, {
-		percent: 90,
+		percent: 85,
 		textContent: 'CSS/CSS3',
 		icon: 'fab fa-css3-alt'
 	}, {
-		percent: 30,
-		textContent: 'Wordpress(Bakery)',
-		icon: 'fab fa-wordpress'
-	}, {
-		percent: 50,
+		percent: 48,
+		textContent: 'Sass',
+		icon: 'fab fa-sass'
+	},{
+		percent: 37,
 		textContent: 'Bootstrap',
 		icon: 'fab fa-bootstrap'
 	}, {
-		percent: 90,
+		percent: 88,
 		textContent: 'Git',
 		icon: 'fab fa-github-square'
 	}, {
-		percent: 25,
-		textContent: 'Ajax',
-		icon: 'fas fa-file-code'
-	}, {
-		percent: 55,
-		textContent: 'Json',
-		icon: 'fas fa-file-code'
-	}, {
-		percent: 70,
+		percent: 47,
 		textContent: 'JavaScript/JQuery',
 		icon: 'fab fa-js-square'
 	}, {
-		percent: 30,
+		percent: 32,
 		textContent: 'Photoshop',
 		icon: 'fab fa-adobe'
 	}, {
-		percent: 75,
+		percent: 32,
 		textContent: 'UI / UX',
 		icon: 'fas fa-columns'
 	}, {
-		percent: 50,
+		percent: 20,
 		textContent: 'SEO',
 		icon: 'fab fa-google'
 	}, {
-		percent: 70,
-		textContent: 'PHP',
-		icon: 'fab fa-php'
-	}, {
-		percent: 40,
+		percent: 25,
 		textContent: 'MySQL',
 		icon: 'fas fa-database'
 	}
@@ -70,19 +58,19 @@ for(let i in chartData) {
 
 const expData = [
 	{
-		company: 'img/tcap.png',
-		companyName: 'Transcosmos Asia Philippines Inc.',
-		dateExp: '( Front-End Web Developer )',
-		position: 'May 06, 2019 - Present',
+		company_logo: 'img/tcap.png',
+		company_name: 'Transcosmos Asia Philippines Inc.',
+		job_position: 'Front-End Web Developer',
+		job_exp: '( May 06, 2019 - Present )',
 		description: [{
-			'desc' : ['Cooperate with designers to create clean interfaces and simple, intuitive interactions and experiences.',
-					'Develop project concepts and maintain optimal workflow.',
-					'Carry out quality assurance tests to discover errors and optimize usability.',
-					'Convert PSD design to code using HTML/CSS/JavaScript/JQuery libraries etc.',
-					'Develop responsive view for mobiles.',
-					'Maintain and improve website / Browser testing and debugging / Optimize applications for maximum speed.',
-					'Finish the task before the deadline.',
-					'Support back-end developers for Unit Testing']
+			'description_content' : ['Cooperate with designers to create clean interfaces, simple, intuitive interactions and experiences',
+									'Develop project concepts and maintain optimal workflow',
+									'Carry out quality assurance tests to discover errors and optimize usability',
+									'Convert PSD design to code using HTML | CSS | JavaScript/JQuery libraries etc.',
+									'Develop responsive view for mobiles',
+									'Maintain and improve website | Browser testing and debugging | Optimize applications for maximum speed',
+									'Finish the task before the deadline',
+									'Support back-end developers for unit testing']
 		}],
 		project: [{
 			projectName: 'Duskin Health Rent',
@@ -99,25 +87,23 @@ const expData = [
 ];
 
 for(let x in expData) {
-	let htmlStr = '<li class="expBlock">\
-		<div class="logoContent" data-aos="fade-right" data-aos-duration="500">\
-			<img class="logo" src='+expData[x].company+'>\
-		</div>\
-		<div class="expContent" data-aos="fade-right" data-aos-duration="500">\
-			<p class="companyName">'+ expData[x].companyName +'</p>\
-			<p class="dateExp">'+ expData[x].dateExp +'</p>\
-			<p class="position">'+ expData[x].position +'</p>\
-			<ul class="desc">';
-
-				for(let y in expData[x].description[0].desc) {
-					htmlStr = htmlStr + '<li class="descList"><i class="fa fa-caret-right"></i>'+  expData[x].description[0].desc[y] +'</li>';
-				}
-
-				htmlStr = htmlStr + '\
-			</ul>\
-		</div>\
-		</li>';
-	$('.expList').append(htmlStr);
+	let htmlStr =	'<li>\
+						<div class="logo_content" data-aos="fade-right" data-aos-duration="500">\
+							<img src='+expData[x].company_logo +'>\
+						</div>\
+						<div class="exp_content" data-aos="fade-right" data-aos-duration="500">\
+							<p class="company_name">'+ expData[x].company_name +'</p>\
+							<p class="job_position">'+ expData[x].job_position +'</p>\
+							<p class="job_exp">'+ expData[x].job_exp +'</p>\
+							<ul class="description_content">';
+								for(let y in expData[x].description[0].description_content) {
+									htmlStr = htmlStr + '<li class="description_list"><i class="fa fa-caret-right"></i>'+ expData[x].description[0].description_content[y] +'</li>';
+								}
+								htmlStr = htmlStr + '\
+							</ul>\
+						</div>\
+					</li>';
+					$('.exp').append(htmlStr);
 	
 	for(let z in expData[x].project){
 	$('.project_content').append('\
