@@ -63,14 +63,13 @@ const expData = [
 		job_position: 'Front-End Web Developer',
 		job_exp: '( May 06, 2019 - Present )',
 		description: [{
-			'description_content' : ['Cooperate with designers to create clean interfaces, simple, intuitive interactions and experiences',
-									'Develop project concepts and maintain optimal workflow',
-									'Carry out quality assurance tests to discover errors and optimize usability',
+			'description_content' : ['Cooperate with designers to create clean, simple and user friendly interfaces',
+									'Uses code versioning tool for project workflows',
 									'Convert PSD design to code using HTML | CSS | JavaScript/JQuery libraries etc.',
 									'Develop responsive view for mobiles',
-									'Maintain and improve website | Browser testing and debugging | Optimize applications for maximum speed',
-									'Finish the task before the deadline',
-									'Support back-end developers for unit testing']
+									'Carry out quality assurance tests to discover errors and optimize usability',
+									'Maintain and improve websites | Browser testing and debugging | Optimizing websites for maximum speed',
+									'Finish the task before the deadline']
 		}],
 		project: [{
 			projectName: 'Duskin Health Rent',
