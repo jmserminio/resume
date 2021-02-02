@@ -51,9 +51,4 @@ $(function() {
 			$('.project_cap').css('bottom', '-100px');
 		}
 	});
-
-	$('.see_more').click(function(e){
-		alert("Coming Soon...");
-		e.preventDefault();
-	});
 });

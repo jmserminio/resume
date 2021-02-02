@@ -288,23 +288,6 @@ h2 {
 	background: #f0f0f0;
 	color: #494949;
 }
-.see_more {
-	width: 30%;
-	margin: auto;
-}
-.see_more a {
-	display: block;
-	padding: 10px 0;
-	border: 2px solid #494949;
-	border-radius: 8px;
-	color: #494949;
-	text-align: center;
-	text-decoration: none;
-}
-.see_more:hover a {
-	color: #f0f0f0;
-	background: #494949;
-}
 
 /* Back to top */
 .arrow_up {
