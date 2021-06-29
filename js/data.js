@@ -1,31 +1,31 @@
 $(function() {
 const chartData = [
 	{
-		percent: 92,
+		percent: 88,
 		textContent: 'HTML/HTML5',
 		icon: 'fab fa-html5'
 	}, {
-		percent: 85,
+		percent: 82,
 		textContent: 'CSS/CSS3',
 		icon: 'fab fa-css3-alt'
 	}, {
-		percent: 48,
+		percent: 25,
 		textContent: 'Sass',
 		icon: 'fab fa-sass'
 	},{
-		percent: 37,
+		percent: 25,
 		textContent: 'Bootstrap',
 		icon: 'fab fa-bootstrap'
 	}, {
-		percent: 88,
+		percent: 78,
 		textContent: 'Git',
 		icon: 'fab fa-github-square'
 	}, {
-		percent: 47,
+		percent: 38,
 		textContent: 'JavaScript/JQuery',
 		icon: 'fab fa-js-square'
 	}, {
-		percent: 32,
+		percent: 35,
 		textContent: 'Photoshop',
 		icon: 'fab fa-adobe'
 	}, {
@@ -37,7 +37,7 @@ const chartData = [
 		textContent: 'SEO',
 		icon: 'fab fa-google'
 	}, {
-		percent: 25,
+		percent: 10,
 		textContent: 'MySQL',
 		icon: 'fas fa-database'
 	}
